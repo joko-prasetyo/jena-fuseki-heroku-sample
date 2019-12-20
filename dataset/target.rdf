@@ -1,10 +1,396 @@
-<?xml version="1.0"?>
-<rdf:RDF
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:schema="http://schema.org/"
-  xml:base="http://semantic-restaurant.herokuapp.com/sample/">
-  <rdf:Description rdf:about="somenode">
-    <schema:name xml:lang="ja">name of something</schema:name>
-    <rdf:type rdf:resource="http://schema.org/Thing"/>
-  </rdf:Description>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:foo="https://semanticresto.com/">
+
+    <foo:Food rdf:about="http://wikipedia.com/Gado-gado/">
+        <foaf:name>Gado-Gado</foaf:name>
+        <foaf:price>15000</foaf:price>
+        <foaf:ingredients>Sayuran, Tahu, Tempe, Telur</foaf:ingredients>
+        <foaf:category>Breakfast</foaf:category>
+        <foaf:url>gbr/gadogado.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Lontong_Krubyuk/">
+        <foaf:name>Lontong Krubyuk</foaf:name>
+        <foaf:price>20000</foaf:price>
+        <foaf:ingredients>Lontong, Tauge, Ayam, Bakso</foaf:ingredients>
+        <foaf:category>Breakfast</foaf:category>
+        <foaf:url>gbr/lontongkrubyuk.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Nasi_timbel/">
+        <foaf:name>Nasi Timbel</foaf:name>
+        <foaf:price>18000</foaf:price>
+        <foaf:ingredients>Nasi, Labu, Tahu, Sayuran</foaf:ingredients>
+        <foaf:category>Breakfast</foaf:category>
+        <foaf:url>gbr/nasitimbel.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Soto_Lamongan/">
+        <foaf:name>Soto Lamongan</foaf:name>
+        <foaf:price>30000</foaf:price>
+        <foaf:ingredients>Ayam, Telur, Tauge, Asam</foaf:ingredients>
+        <foaf:category>Breakfast</foaf:category>
+        <foaf:url>gbr/sotolamongan.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Empal_gentong/">
+        <foaf:name>Empal Gentong</foaf:name>
+        <foaf:price>17000</foaf:price>
+        <foaf:ingredients>Jeroan, Daging Sapi, Santan</foaf:ingredients>
+        <foaf:category>Breakfast</foaf:category>
+        <foaf:url>gbr/empalgentong.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Nasi_gemuk/">
+        <foaf:name>Nasi Gemuk</foaf:name>
+        <foaf:price>20000</foaf:price>
+        <foaf:ingredients>Nasi, Ayam, Bihum, Telur</foaf:ingredients>
+        <foaf:category>Breakfast</foaf:category>
+        <foaf:url>gbr/nasigemuk.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Mie_Gomak/">
+        <foaf:name>Mie Gomak</foaf:name>
+        <foaf:price>15000</foaf:price>
+        <foaf:ingredients>Mie, Telur, Sayuran, Santan</foaf:ingredients>
+        <foaf:category>Breakfast</foaf:category>
+        <foaf:url>gbr/miegomak.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Kupat_tahu/">
+        <foaf:name>Kupat Tahu</foaf:name>
+        <foaf:price>30000</foaf:price>
+        <foaf:ingredients>Ketupat, Tahu, Toge, Telur</foaf:ingredients>
+        <foaf:category>Breakfast</foaf:category>
+        <foaf:url>gbr/kupattahu.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Gulai_Taboh/">
+        <foaf:name>Gulai Taboh</foaf:name>
+        <foaf:price>40000</foaf:price>
+        <foaf:ingredients>Ikan, Sayur, Santan, Jagung</foaf:ingredients>
+        <foaf:category>Lunch</foaf:category>
+        <foaf:url>gbr/gulaitaboh.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Sop_Jepara/">
+        <foaf:name>Sop Jepara</foaf:name>
+        <foaf:price>45000</foaf:price>
+        <foaf:ingredients>Udang, Jamur, Seledri, Cabai</foaf:ingredients>
+        <foaf:category>Lunch</foaf:category>
+        <foaf:url>gbr/sopjepara.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Bandeng_asap/">
+        <foaf:name>Bandeng Asap</foaf:name>
+        <foaf:price>35000</foaf:price>
+        <foaf:ingredients>Bandeng, Saus Tiram, Sayur</foaf:ingredients>
+        <foaf:category>Lunch</foaf:category>
+        <foaf:url>gbr/bandengasap.jpg</foaf:url>
+    </foo:Food>
+    <foo:Food rdf:about="http://wikipedia.com/Binte_Biluhuta/">
+        <foaf:name>Binte Biluhuta</foaf:name>
+        <foaf:price>25000</foaf:price>
+        <foaf:ingredients>Ikan, Jagung, Kelapa</foaf:ingredients>
+        <foaf:category>Lunch</foaf:category>
+        <foaf:url>gbr/bintebiluhuta.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Sop_Konro/">
+        <foaf:name>Sop Konro</foaf:name>
+        <foaf:price>35000</foaf:price>
+        <foaf:ingredients>Iga, Daging, Kacang Tanah</foaf:ingredients>
+        <foaf:category>Lunch</foaf:category>
+        <foaf:url>gbr/sopkonro.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Ikan_rica/">
+        <foaf:name>Ikan Rica</foaf:name>
+        <foaf:price>35000</foaf:price>
+        <foaf:ingredients>Ikan, Daun Kemangi, Teh</foaf:ingredients>
+        <foaf:category>Lunch</foaf:category>
+        <foaf:url>gbr/ikanrica.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Opor_Ayam/">
+        <foaf:name>Opor Ayam</foaf:name>
+        <foaf:price>30000</foaf:price>
+        <foaf:ingredients>Ayam, Kelapa, Teh</foaf:ingredients>
+        <foaf:category>Lunch</foaf:category>
+        <foaf:url>gbr/oporayam.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Sate_Tegal/">
+        <foaf:name>Sate Tegal</foaf:name>
+        <foaf:price>35000</foaf:price>
+        <foaf:ingredients>Daging, Asam, Kecap, Nanas</foaf:ingredients>
+        <foaf:category>Lunch</foaf:category>
+        <foaf:url>gbr/satetegal.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Sate_kerang/">
+        <foaf:name>Sate Kerang</foaf:name>
+        <foaf:price>30000</foaf:price>
+        <foaf:ingredients>Kerang, Asam, Kecap</foaf:ingredients>
+        <foaf:category>Dinner</foaf:category>
+        <foaf:url>gbr/satekerang.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Tongseng/">
+        <foaf:name>Tongseng</foaf:name>
+        <foaf:price>40000</foaf:price>
+        <foaf:ingredients>Iga, Daging, Jamur, Kecap</foaf:ingredients>
+        <foaf:category>Dinner</foaf:category>
+        <foaf:url>gbr/tongseng.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Nasi_Tutug_Oncom/">
+        <foaf:name>Nasi Tutug Oncom</foaf:name>
+        <foaf:price>25000</foaf:price>
+        <foaf:ingredients>Nasi, Ikan, Daun Kemangi</foaf:ingredients>
+        <foaf:category>Dinner</foaf:category>
+        <foaf:url>gbr/nasitutugoncom.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Pindang_Serani/">
+        <foaf:name>Pindang Serani</foaf:name>
+        <foaf:price>30000</foaf:price>
+        <foaf:ingredients>Ikan, Jamur, Asam, Kemangi</foaf:ingredients>
+        <foaf:category>Dinner</foaf:category>
+        <foaf:url>gbr/pindangserani.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Mie_Celor/">
+        <foaf:name>Mie Celor</foaf:name>
+        <foaf:price>15000</foaf:price>
+        <foaf:ingredients>Mie, Udang, Telur, Teh</foaf:ingredients>
+        <foaf:category>Dinner</foaf:category>
+        <foaf:url>gbr/miecelor.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Ayam_Geprek/">
+        <foaf:name>Ayam Geprek</foaf:name>
+        <foaf:price>25000</foaf:price>
+        <foaf:ingredients>Ayam, Limau, Sayur</foaf:ingredients>
+        <foaf:category>Dinner</foaf:category>
+        <foaf:url>gbr/ayamgeprek.jpg</foaf:url>
+    </foo:Food>
+    <foo:Food rdf:about="http://wikipedia.com/Ayam_pop/">
+        <foaf:name>Ayam Pop</foaf:name>
+        <foaf:price>20000</foaf:price>
+        <foaf:ingredients>Ayam, Kelapa, Petai</foaf:ingredients>
+        <foaf:category>Dinner</foaf:category>
+        <foaf:url>gbr/ayampop.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Sie_Reuboh/">
+        <foaf:name>Sie Reuboh</foaf:name>
+        <foaf:price>20000</foaf:price>
+        <foaf:ingredients>Lemak, Daging, Nira</foaf:ingredients>
+        <foaf:category>Dinner</foaf:category>
+        <foaf:url>gbr/siereuboh.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Bajigur/">
+        <foaf:name>Bajigur</foaf:name>
+        <foaf:price>15000</foaf:price>
+        <foaf:ingredients>Teh, Gula, Kelapa</foaf:ingredients>
+        <foaf:category>Drink</foaf:category>
+        <foaf:url>gbr/bajigur.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Teh_Tarik/">
+        <foaf:name>Teh Tarik</foaf:name>
+        <foaf:price>10000</foaf:price>
+        <foaf:ingredients>Teh, Jelly, Susu</foaf:ingredients>
+        <foaf:category>Drink</foaf:category>
+        <foaf:url>gbr/tehtarik.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Sekoteng/">
+        <foaf:name>Sekoteng</foaf:name>
+        <foaf:price>15000</foaf:price>
+        <foaf:ingredients>Vanila, Roti, Kacang</foaf:ingredients>
+        <foaf:category>Drink</foaf:category>
+        <foaf:url>gbr/sekoteng.jpg</foaf:url>
+    </foo:Food>
+    <foo:Food rdf:about="http://wikipedia.com/Cendol/">
+        <foaf:name>Cendol</foaf:name>
+        <foaf:price>10000</foaf:price>
+        <foaf:ingredients>Cendol, Lengkong, Santan</foaf:ingredients>
+        <foaf:category>Drink</foaf:category>
+        <foaf:url>gbr/cendol.jpeg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Legen/">
+        <foaf:name>Legen</foaf:name>
+        <foaf:price>15000</foaf:price>
+        <foaf:ingredients>Sirup, Vanila, Santan</foaf:ingredients>
+        <foaf:category>Drink</foaf:category>
+        <foaf:url>gbr/legen.jpg</foaf:url>
+    </foo:Food>
+
+
+    <foo:Food rdf:about="http://wikipedia.com/Pallu_Butung/">
+        <foaf:name>Es Pallu Butung</foaf:name>
+        <foaf:price>25000</foaf:price>
+        <foaf:ingredients>Pandan, Santan, Vanila, Pisang</foaf:ingredients>
+        <foaf:category>Drink</foaf:category>
+        <foaf:url>gbr/espallubutung.jpg</foaf:url>
+    </foo:Food>
+
+
+    <foo:Food rdf:about="http://wikipedia.com/Bir_Pletok/">
+        <foaf:name>Bir Pletok</foaf:name>
+        <foaf:price>25000</foaf:price>
+        <foaf:ingredients>Pandan, Cengkeh, Jahe</foaf:ingredients>
+        <foaf:category>Drink</foaf:category>
+        <foaf:url>gbr/birpletok.jpg</foaf:url>
+    </foo:Food>
+
+
+
+    <foo:Food rdf:about="http://wikipedia.com/Es_Cincau/">
+        <foaf:name>Es Cincau</foaf:name>
+        <foaf:price>15000</foaf:price>
+        <foaf:ingredients>Lengkong, Jelly, Santan</foaf:ingredients>
+        <foaf:category>Drink</foaf:category>
+        <foaf:url>gbr/escincau.jpg</foaf:url>
+    </foo:Food>
+
+
+
+    <foo:Food rdf:about="http://wikipedia.com/Menjes/">
+        <foaf:name>Menjes</foaf:name>
+        <foaf:price>15000</foaf:price>
+        <foaf:ingredients>Tempe, Tepung, Ayam</foaf:ingredients>
+        <foaf:category>Desert</foaf:category>
+        <foaf:url>gbr/menjes.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Sosis_Solo/">
+        <foaf:name>Sosis Solo</foaf:name>
+        <foaf:price>15000</foaf:price>
+        <foaf:ingredients>Daging, Tepung, Telur</foaf:ingredients>
+        <foaf:category>Dessert</foaf:category>
+        <foaf:url>sosissolo.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Wajik/">
+        <foaf:name>Wajik</foaf:name>
+        <foaf:price>5000</foaf:price>
+        <foaf:ingredients>Tepung, Ayam, Telur</foaf:ingredients>
+        <foaf:category>Desert</foaf:category>
+        <foaf:url>gbr/wajik.jpg</foaf:url>
+    </foo:Food>
+    <foo:Food rdf:about="http://wikipedia.com/Enting-enting/">
+        <foaf:name>Enting Enting</foaf:name>
+        <foaf:price>10000</foaf:price>
+        <foaf:ingredients>Kacang, Gula, Ragi</foaf:ingredients>
+        <foaf:category>Desert</foaf:category>
+        <foaf:url>gbr/enting.jpg</foaf:url>
+    </foo:Food>
+    <foo:Food rdf:about="http://wikipedia.com/Colenak/">
+        <foaf:name>Colenak</foaf:name>
+        <foaf:price>15000</foaf:price>
+        <foaf:ingredients>Tape, Kelapa, Teh</foaf:ingredients>
+        <foaf:category>Desert</foaf:category>
+        <foaf:url>gbr/colenak.jpg</foaf:url>
+    </foo:Food>
+    <foo:Food rdf:about="http://wikipedia.com/Puding/">
+        <foaf:name>Puding</foaf:name>
+        <foaf:price>15000</foaf:price>
+        <foaf:ingredients>Agar-agar, Oreo, Telur</foaf:ingredients>
+        <foaf:category>Desert</foaf:category>
+        <foaf:url>gbr/puding.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Kheer/">
+        <foaf:name>Kheer</foaf:name>
+        <foaf:price>12000</foaf:price>
+        <foaf:ingredients>Ketan, Kelapa, Gula</foaf:ingredients>
+        <foaf:category>Desert</foaf:category>
+        <foaf:url>gbr/kheer.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Dodol_Garut/">
+        <foaf:name>Dodol Garut</foaf:name>
+        <foaf:price>10000</foaf:price>
+        <foaf:ingredients>Ketan, Kelapa, Gula</foaf:ingredients>
+        <foaf:category>Desert</foaf:category>
+        <foaf:url>gbr/dodolgarut.jpg</foaf:url>
+    </foo:Food>
+
+    <foo:Food rdf:about="http://wikipedia.com/Mousse/">
+        <foaf:name>Mousse</foaf:name>
+        <foaf:price>15000</foaf:price>
+        <foaf:ingredients>Cream, Telur, Coklat</foaf:ingredients>
+        <foaf:category>Desert</foaf:category>
+        <foaf:url>gbr/mousse.jpg</foaf:url>
+    </foo:Food>
+
+
+    <foo:Food rdf:about="http://wikipedia.com/Keripik_Pisang/">
+        <foaf:name>Keripik Pisang</foaf:name>
+        <foaf:price>12000</foaf:price>
+        <foaf:ingredients>Pisang, Air Kelapa</foaf:ingredients>
+        <foaf:category>Fritters</foaf:category>
+        <foaf:url>gbr/keripikpisang.jpg</foaf:url>
+    </foo:Food>
+
+
+
+    <foo:Food rdf:about="http://wikipedia.com/Risoles/">
+        <foaf:name>Risoles</foaf:name>
+        <foaf:price>5000</foaf:price>
+        <foaf:ingredients>Tepung, Telur, Sayur</foaf:ingredients>
+        <foaf:category>Fritters</foaf:category>
+        <foaf:url>gbr/resoles.jpg</foaf:url>
+    </foo:Food>
+
+
+
+    <foo:Food rdf:about="http://wikipedia.com/Serabi/">
+        <foaf:name>Serabi</foaf:name>
+        <foaf:price>13000</foaf:price>
+        <foaf:ingredients>Tepung, Telur, Pasta</foaf:ingredients>
+        <foaf:category>Fritters</foaf:category>
+        <foaf:url>gbr/serabi.jpg</foaf:url>
+    </foo:Food>
+    <foo:Food rdf:about="http://wikipedia.com/Dorokdok/">
+        <foaf:name>Dorokdok</foaf:name>
+        <foaf:price>12000</foaf:price>
+        <foaf:ingredients>Tahu, Saus Tiram, Daging</foaf:ingredients>
+        <foaf:category>Fritters</foaf:category>
+        <foaf:url>gbr/dorokdok.jpg</foaf:url>
+    </foo:Food>
+    <foo:Food rdf:about="http://wikipedia.com/Tahu_petis/">
+        <foaf:name>Tahu Petis</foaf:name>
+        <foaf:price>10000</foaf:price>
+        <foaf:ingredients>Tahu, Kacang, Kecap</foaf:ingredients>
+        <foaf:category>Fritters</foaf:category>
+        <foaf:url>gbr/tahupetis.jpg</foaf:url>
+    </foo:Food>
+    <foo:Food rdf:about="http://wikipedia.com/Perkedel/">
+        <foaf:name>Perkedel</foaf:name>
+        <foaf:price>5000</foaf:price>
+        <foaf:ingredients>Kentang, Daging, Telur</foaf:ingredients>
+        <foaf:category>Fritters</foaf:category>
+        <foaf:url>gbr/perkedel.jpg</foaf:url>
+    </foo:Food>
+    <foo:Food rdf:about="http://wikipedia.com/Ampyang/">
+        <foaf:name>Ampyang</foaf:name>
+        <foaf:price>10000</foaf:price>
+        <foaf:ingredients>Kacang, Jahe, Gula</foaf:ingredients>
+        <foaf:category>Fritters</foaf:category>
+        <foaf:url>gbr/ampyang.jpg</foaf:url>
+    </foo:Food>
+    <foo:Food rdf:about="http://wikipedia.com/Yangko/">
+        <foaf:name>Yangko</foaf:name>
+        <foaf:price>10000</foaf:price>
+        <foaf:ingredients>Tepung, Ketan, Kelapa</foaf:ingredients>
+        <foaf:category>Fritters</foaf:category>
+        <foaf:url>gbr/yangkoo.jpg</foaf:url>
+    </foo:Food>
 </rdf:RDF>
