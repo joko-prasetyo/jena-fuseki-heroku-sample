@@ -1,7 +1,7 @@
 <?php 
     require_once('sparqlib.php');
     function query($category) {
-        $db = sparql_connect("https://semantic-restaurant.herokuapp.com/sample");
+        $db = sparql_connect("/sample/query?force-accept=text%2Fplain");
         if (!$db) {
             print sparql_errno() .": ". sparql_errno(). "\n"; exit;
         }
